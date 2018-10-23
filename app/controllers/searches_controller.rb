@@ -3,7 +3,7 @@ class SearchesController < ApplicationController
   def search
   end
 
-  
+# update the friends action to use the service object
   def friends
     foursquare = FoursquareService.new
     @friends = foursquare.friends(session[:token])
